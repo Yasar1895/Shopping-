@@ -1,78 +1,30 @@
 const products = [
-  {
-    id: 'p1',
-    title: 'Wireless Headphones',
-    price: 99.99,
-    mrp: 129.99,
-    category: 'Audio',
-    rating: 4.6,
-    images: ['https://images.unsplash.com/photo-1518444026327-8f1fda1f7d01?auto=format&fit=crop&w=1400&q=80'],
-    description: 'Comfortable wireless headphones with 20h battery and active noise cancellation.'
-  },
-  {
-    id: 'p2',
-    title: 'Smart Watch',
-    price: 149.00,
-    mrp: 199.00,
-    category: 'Wearables',
-    rating: 4.4,
-    images: ['https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=1400&q=80'],
-    description: 'Track workouts, heart rate, and notifications from your wrist.'
-  },
-  {
-    id: 'p3',
-    title: 'Portable Bluetooth Speaker',
-    price: 59.99,
-    category: 'Audio',
-    rating: 4.2,
-    images: ['https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1400&q=80'],
-    description: 'Bold sound in a tiny body — water resistant and long battery.'
-  },
-  {
-    id: 'p4',
-    title: 'Fitness Tracker Band',
-    price: 39.99,
-    category: 'Wearables',
-    rating: 4.0,
-    images: ['https://images.unsplash.com/photo-1519861531920-2fdfb6f0d6b1?auto=format&fit=crop&w=1400&q=80'],
-    description: 'Lightweight activity tracker with sleep monitoring.'
-  },
-  {
-    id: 'p5',
-    title: 'USB-C Fast Charger',
-    price: 24.99,
-    category: 'Accessories',
-    rating: 4.7,
-    images: ['https://images.unsplash.com/photo-1536305030016-6c3b59c3d277?auto=format&fit=crop&w=1400&q=80'],
-    description: '65W fast-charging brick for laptops and phones.'
-  },
-  {
-    id: 'p6',
-    title: 'Gaming Mouse',
-    price: 49.99,
-    category: 'Accessories',
-    rating: 4.5,
-    images: ['https://images.unsplash.com/photo-1587825140708-4c86b1f7c7e9?auto=format&fit=crop&w=1400&q=80'],
-    description: 'Precision gaming mouse with RGB and programmable buttons.'
-  },
-  {
-    id: 'p7',
-    title: 'Noise-Canceling Earbuds',
-    price: 129.99,
-    category: 'Audio',
-    rating: 4.3,
-    images: ['https://images.unsplash.com/photo-1516117172878-fd2c41f4a759?auto=format&fit=crop&w=1400&q=80'],
-    description: 'Tiny earbuds with impressive ANC and crystal call quality.'
-  },
-  {
-    id: 'p8',
-    title: 'Laptop Sleeve',
-    price: 29.99,
-    category: 'Accessories',
-    rating: 4.1,
-    images: ['https://images.unsplash.com/photo-1591012911204-30e7f9b6b03b?auto=format&fit=crop&w=1400&q=80'],
-    description: 'Slim neoprene sleeve fits 13-15 inch laptops.'
-  }
+  { id: 'p1', title: 'Wireless Headphones', price: 99.99, mrp: 129.99, category: 'Audio', rating: 4.6, images: ['https://images.unsplash.com/photo-1518444026327-8f1fda1f7d01?auto=format&fit=crop&w=1400&q=80'], description: 'Comfortable wireless headphones with 20h battery and active noise cancellation.' },
+  { id: 'p2', title: 'Smart Watch', price: 149.00, mrp: 199.00, category: 'Wearables', rating: 4.4, images: ['https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=1400&q=80'], description: 'Track workouts, heart rate, and notifications from your wrist.' },
+  { id: 'p3', title: 'Portable Bluetooth Speaker', price: 59.99, category: 'Audio', rating: 4.2, images: ['https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1400&q=80'], description: 'Bold sound in a tiny body — water resistant and long battery.' },
+  { id: 'p4', title: 'Fitness Tracker Band', price: 39.99, category: 'Wearables', rating: 4.0, images: ['https://images.unsplash.com/photo-1519861531920-2fdfb6f0d6b1?auto=format&fit=crop&w=1400&q=80'], description: 'Lightweight activity tracker with sleep monitoring.' },
+  { id: 'p5', title: 'USB-C Fast Charger', price: 24.99, category: 'Accessories', rating: 4.7, images: ['https://images.unsplash.com/photo-1536305030016-6c3b59c3d277?auto=format&fit=crop&w=1400&q=80'], description: '65W fast-charging brick for laptops and phones.' },
+  { id: 'p6', title: 'Gaming Mouse', price: 49.99, category: 'Accessories', rating: 4.5, images: ['https://images.unsplash.com/photo-1587825140708-4c86b1f7c7e9?auto=format&fit=crop&w=1400&q=80'], description: 'Precision gaming mouse with RGB and programmable buttons.' },
+  { id: 'p7', title: 'Noise-Canceling Earbuds', price: 129.99, category: 'Audio', rating: 4.3, images: ['https://images.unsplash.com/photo-1516117172878-fd2c41f4a759?auto=format&fit=crop&w=1400&q=80'], description: 'Tiny earbuds with impressive ANC and crystal call quality.' },
+  { id: 'p8', title: 'Laptop Sleeve', price: 29.99, category: 'Accessories', rating: 4.1, images: ['https://images.unsplash.com/photo-1591012911204-30e7f9b6b03b?auto=format&fit=crop&w=1400&q=80'], description: 'Slim neoprene sleeve fits 13-15 inch laptops.' },
+
+  // more products
+  { id: 'p9', title: 'Wireless Keyboard', price: 59.99, category: 'Accessories', rating: 4.4, images: ['https://images.unsplash.com/photo-1581276879432-15d6e7e987f2?auto=format&fit=crop&w=1400&q=80'], description: 'Slim, ergonomic wireless keyboard with quiet keys.' },
+  { id: 'p10', title: '4K Monitor', price: 299.99, mrp: 349.99, category: 'Computers', rating: 4.7, images: ['https://images.unsplash.com/photo-1587829752291-2ed53f61f6c0?auto=format&fit=crop&w=1400&q=80'], description: 'Crisp 27-inch 4K monitor with HDR support.' },
+  { id: 'p11', title: 'Gaming Headset', price: 89.99, category: 'Audio', rating: 4.5, images: ['https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=1400&q=80'], description: 'Comfortable gaming headset with surround sound.' },
+  { id: 'p12', title: 'Laptop Stand', price: 39.99, category: 'Accessories', rating: 4.2, images: ['https://images.unsplash.com/photo-1587825154078-4458a1e90f12?auto=format&fit=crop&w=1400&q=80'], description: 'Adjustable stand for better ergonomics and airflow.' },
+  { id: 'p13', title: 'Smartphone Gimbal', price: 129.99, category: 'Photography', rating: 4.6, images: ['https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1400&q=80'], description: 'Stabilize your videos with 3-axis gimbal.' },
+  { id: 'p14', title: 'Action Camera', price: 199.99, category: 'Photography', rating: 4.5, images: ['https://images.unsplash.com/photo-1508898578281-774ac4893c7e?auto=format&fit=crop&w=1400&q=80'], description: 'Waterproof action camera for adventure sports.' },
+  { id: 'p15', title: 'Drone Quadcopter', price: 499.99, category: 'Photography', rating: 4.7, images: ['https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1400&q=80'], description: 'High-quality drone with 4K camera and GPS.' },
+  { id: 'p16', title: 'Portable SSD 1TB', price: 149.99, category: 'Computers', rating: 4.8, images: ['https://images.unsplash.com/photo-1580894732444-1a6aa111503c?auto=format&fit=crop&w=1400&q=80'], description: 'Super-fast USB-C external SSD for data storage.' },
+  { id: 'p17', title: 'Mechanical Keyboard', price: 129.99, category: 'Accessories', rating: 4.6, images: ['https://images.unsplash.com/photo-1585855855774-cdb7e3dff3e5?auto=format&fit=crop&w=1400&q=80'], description: 'RGB mechanical keyboard with tactile switches.' },
+  { id: 'p18', title: 'VR Headset', price: 399.99, category: 'Gaming', rating: 4.4, images: ['https://images.unsplash.com/photo-1611078482909-0f684735df2a?auto=format&fit=crop&w=1400&q=80'], description: 'Immersive VR headset with high resolution and wide FOV.' },
+  { id: 'p19', title: 'Electric Scooter', price: 699.99, category: 'Mobility', rating: 4.3, images: ['https://images.unsplash.com/photo-1611186871453-c25f05726bbf?auto=format&fit=crop&w=1400&q=80'], description: 'Compact electric scooter with 20-mile range.' },
+  { id: 'p20', title: 'Smart Lamp', price: 49.99, category: 'Home', rating: 4.1, images: ['https://images.unsplash.com/photo-1592210675052-b3d817f88b7c?auto=format&fit=crop&w=1400&q=80'], description: 'WiFi-enabled smart lamp with multiple colors.' },
+  { id: 'p21', title: 'Wireless Charger', price: 29.99, category: 'Accessories', rating: 4.4, images: ['https://images.unsplash.com/photo-1581287335940-0118424c25f0?auto=format&fit=crop&w=1400&q=80'], description: 'Qi-certified fast wireless charger for smartphones.' },
+  { id: 'p22', title: 'Smart Thermostat', price: 199.99, category: 'Home', rating: 4.5, images: ['https://images.unsplash.com/photo-1580657011907-30a0a3f7f1f5?auto=format&fit=crop&w=1400&q=80'], description: 'Adjust your home temperature from anywhere via app.' },
+  { id: 'p23', title: 'Robot Vacuum', price: 299.99, category: 'Home', rating: 4.6, images: ['https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=1400&q=80'], description: 'Automatic robot vacuum cleaner with smart mapping.' },
+  { id: 'p24', title: 'Smart Door Lock', price: 179.99, category: 'Home', rating: 4.3, images: ['https://images.unsplash.com/photo-1612392061788-529f31a3e5b1?auto=format&fit=crop&w=1400&q=80'], description: 'Keyless smart lock with mobile access control.' }
 ]
 
 export default products
